@@ -9,7 +9,6 @@ class Driver {
   constructor(name) {
       this.id = ++driverId;
       this.name = name;
-
       store.drivers.push(this);
   }
 
@@ -54,7 +53,6 @@ class Trip {
     this.id = ++tripId;
     this.driverId = driver.id;
     this.passengerId = passenger.id;
-
     store.trips.push(this);
   };
 
